@@ -1,104 +1,553 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Cover Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/cover.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <!-- Fixed navbar -->
-              <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Andrew Liu</a>
-                  </div>
-                  <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Stuff<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li class="dropdown-header">Projects</li>
-                          <li><a href="#">A</a></li>
-                          <li><a href="#">B</a></li>
-                          <li><a href="#">C</a></li>
-                          <li class="divider"></li>
-                          <li class="dropdown-header">Projects 2</li>
-                          <li><a href="#">A</a></li>
-                          <li><a href="#">B</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">About Me</a></li>
-                      <li><a href="#">Courses</a></li>
-                      <li><a href="#">CS 161</span></a></li>
-                    </ul>
-                  </div><!--/.nav-collapse -->
-                </div>
-              </nav>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Soybean Commodity Chain Analysis</title>
+	
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/css/get-shit-done.css" rel="stylesheet" />  
+    <link href="assets/css/demo.css" rel="stylesheet" /> 
+    
+    <!--     Font Awesome     -->
+    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+  
+</head>
+<body>
+ <div id="navbar-full">
+    <div id="navbar">
+    <div class="navigation-example blurred-container">
+        <div class="img-src" style="background-image: url('assets/img/cover_4.jpg')"></div>
+  <div class='img-src blur' style="background-image: url('assets/img/cover_4_blur.jpg')"></div>
+         <nav class="navbar navbar-default navbar-transparent" role="navigation-demo">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">ESPM 155</a>
             </div>
-          </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a>
+                </li>
+              </ul>
+               <form class="navbar-form navbar-left navbar-search-form" role="search">                  
+                 <div class="form-group">
+                      <input type="text" value="" class="form-control" placeholder="Search...">
+                 </div> 
+              </form>
+<!--               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Register</a></li>
+                    
+                    <li><button href="#" class="btn btn-round btn-default">Sign in</button></li>
+               </ul> -->
+              
+            </div><!-- /.navbar-collapse -->
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Header.</h1>
-            <p class="lead">Something.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-                Copyright <i class="fa fa-fw"></i> 2015 - Andrew Liu
-            </div>
-          </div>
-
+          </div><!-- /.container-fluid -->
+        </nav>
+    <div class="motto">
+        <div>Soy Commodity Chain Analysis</div>
+    </div>
         </div>
+    </div><!--  end navbar -->
 
+</div> <!-- end menu-dropdown -->
+
+<div class="main">
+    <div class="container tim-container">
+        <div id="extras">
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-7">
+                        <img src="assets/img/bg_1.jpg" alt="highlight text" class="img-circle center-block">
+                </div>
+                <div class="col-md-5">
+                                <h1 class="text-center">About This Project
+                                </h1>
+                                <hr>
+                                    <p>
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    </p>
+                                    <p>
+                                    Hi.                                   </p>
+
+                </div>
+            </div>
+        </div>
+    <!--     end extras -->    
+    </div>
+<!-- end container -->
+<div class="space-30"></div>
+</div>
+
+<div id="carousel">
+    <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active carousel-full">
+          <img class="carousel-full" src="assets/img/carousel_soy_1.jpg" alt="Awesome Image">
+        </div>
+        <div class="item carousel-full">
+          <img class="carousel-full" src="assets/img/carousel_soy_2.jpg" alt="Awesome Image">
+        </div>
+        <div class="item carousel-full">
+          <img class="carousel-full" src="assets/img/carousel_soy_3.jpg" alt="Awesome Image">
+        </div>
+        <div class="item carousel-full">
+          <img class="carousel-full" src="assets/img/carousel_soy_4.jpg" alt="Awesome Image">
+        </div>
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="fa fa-angle-right"></span>
+      </a>
+    </div>
+</div> <!-- end carousel -->
+
+
+
+
+<!-- end main -->
+ <div class="section-dark">
+    <div class="container">
+        <div class="row">
+            <div class="center-block">
+                <h5 class="text-center"> Map of US Soy Production
+                </h5>        
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="section-gray">
+    <div class="container">
+        <div class="row">
+<!--             <div class="col-md-8 col-md-offset-2">
+                <h5> US Map of Soy Production (random data).
+                </h5>        
+            </div> -->
+        </div>
+        <div class="center-block" id="usa-map-container" style="position: relative; width: 750px; height: 450px;"></div>
+    </div>
+</div>
+
+<div class="space-100"></div>
+</div>
+
+<div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h3>Labor Analysis of Soy Production</h3>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h3>Economic Analysis of Soy Production</h3>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h3>Environmental Analysis of Soy Production</h3>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo...</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
       </div>
 
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+
+    </div>
+<div class="parallax-pro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>
+                    <small>
+                      Stuff
+                      <br/>
+                      <br/>
+                      More Stuff
+                    </small>
+                </h1>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h1 class="hello text-center">
+                   <small>
+                    <ul class="list-unstyled">
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                    </ul>
+                    </small>
+                </h1>
+            </div>
+        </div>
+        <div class="space-30"></div>
+
+      <hr class="featurette-divider">
+        <div class="row">
+             <div class="col-md-12 text-center">
+                <div class="credits">
+                    &#60;Group Name Here&#62;
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+</div>
+</body>
+
+    <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+  <script src="assets/js/datamaps.usa.min.js"></script>
+
+	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/gsdk-checkbox.js"></script>
+	<script src="assets/js/gsdk-radio.js"></script>
+	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
+	<script src="assets/js/get-shit-done.js"></script>
+	
+    <script src="assets/js/custom.js"></script>
+<script type="text/javascript">
+var colorScale = d3.scale.sqrt()
+        .domain([0, 600000])
+        .range(['#E8F5E9', '#4CAF50']).nice();
+var election = new Datamap({
+  scope: 'usa',
+  element: document.getElementById('usa-map-container'),
+  geographyConfig: {
+    highlightBorderColor: '#bada55',
+	highlightFillColor: '#bada55',
+   popupTemplate: function(geography, data) {
+      return '<div class="hoverinfo">' + geography.properties.name + ' Soybean Production (Thousands of Bushels): ' +  data.soyProduction + ' '
+    },
+    highlightBorderWidth: 3
+  },
+
+  fills: {
+  'None': '#FFFFFF',
+  'Low': '#9BB5F8',
+  'Medium': '#3161D8',
+  'High': '#162B60',
+  defaultFill: '#FFFFFF'
+},
+data:{
+  "AL": {
+      "fillKey": "Low",
+      "soyProduction": 19000
+  },
+  "AK": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "AZ": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "AR": {
+      "fillKey": "Medium",
+      "soyProduction": 160500
+  },
+  "CA": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "CO": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "CT": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "DE": {
+      "fillKey": "Low",
+      "soyProduction": 8784
+  },
+  "FL": {
+      "fillKey": "Low",
+      "soyProduction": 1591
+  },
+  "GA": {
+      "fillKey": "Low",
+      "soyProduction": 11600
+  },
+  "HI": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "ID": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "IL": {
+      "fillKey": "High",
+      "soyProduction": 547680
+  },
+  "IN": {
+      "fillKey": "High",
+      "soyProduction": 307440
+  },
+  "IA": {
+      "fillKey": "High",
+      "soyProduction": 505730
+  },
+  "KS": {
+      "fillKey": "Medium",
+      "soyProduction": 142560
+  },
+  "KY": {
+      "fillKey": "Medium",
+      "soyProduction": 84000
+  },
+  "LA": {
+      "fillKey": "Medium",
+      "soyProduction": 80085
+  },
+  "MD": {
+      "fillKey": "Low",
+      "soyProduction": 23230
+  },
+  "ME": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "MA": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "MI": {
+      "fillKey": "Medium",
+      "soyProduction": 92020
+  },
+  "MN": {
+      "fillKey": "High",
+      "soyProduction": 305340
+  },
+  "MS": {
+      "fillKey": "Medium",
+      "soyProduction": 114400
+  },
+  "MO": {
+      "fillKey": "High",
+      "soyProduction": 260400
+  },
+  "MT": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "NE": {
+      "fillKey": "High",
+      "soyProduction": 288900
+  },
+  "NJ": {
+      "fillKey": "Low",
+      "soyProduction": 4532
+  },
+  "NV": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "NH": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "NY": {
+      "fillKey": "Low",
+      "soyProduction": 14715
+  },
+  "NC": {
+      "fillKey": "Medium",
+      "soyProduction": 69200
+  },
+  "ND": {
+      "fillKey": "High",
+      "soyProduction": 202515
+  },
+  "NM": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "OH": {
+      "fillKey": "High",
+      "soyProduction": 254100
+  },
+  "OK": {
+      "fillKey": "Low",
+      "soyProduction": 10295
+  },
+  "OR": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "PA": {
+      "fillKey": "Low",
+      "soyProduction": 29645
+  },
+  "RI": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "SC": {
+      "fillKey": "Low",
+      "soyProduction": 15400
+  },
+  "SD": {
+      "fillKey": "High",
+      "soyProduction": 229950
+  },
+  "TN": {
+      "fillKey": "Medium",
+      "soyProduction": 74060
+  },
+  "TX": {
+      "fillKey": "Low",
+      "soyProduction": 5390
+  },
+  "UT": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "VA": {
+      "fillKey": "Low",
+      "soyProduction": 25675
+  },
+  "VT": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "WV": {
+      "fillKey": "Low",
+      "soyProduction": 1326
+  },
+  "WA": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  },
+  "WI": {
+      "fillKey": "Medium",
+      "soyProduction": 78760
+  },
+  "WY": {
+      "fillKey": "None",
+      "soyProduction": "-"
+  }
+}
+});
+election.labels();
+</script>
+
+<script type="text/javascript">
+         
+    $('.btn-tooltip').tooltip();
+    $('.label-tooltip').tooltip();
+    $('.pick-class-label').click(function(){
+        var new_class = $(this).attr('new-class');  
+        var old_class = $('#display-buttons').attr('data-class');
+        var display_div = $('#display-buttons');
+        if(display_div.length) {
+        var display_buttons = display_div.find('.btn');
+        display_buttons.removeClass(old_class);
+        display_buttons.addClass(new_class);
+        display_div.attr('data-class', new_class);
+        }
+    });
+    $( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 500,
+		values: [ 75, 300 ],
+	});
+	$( "#slider-default" ).slider({
+			value: 70,
+			orientation: "horizontal",
+			range: "min",
+			animate: true
+	});
+	$('.carousel').carousel({
+      interval: 7000
+    });
+      
+    
+</script>
 </html>
