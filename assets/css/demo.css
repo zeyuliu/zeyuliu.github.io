@@ -319,6 +319,16 @@
     line-height: 40px;
 }
 
+.section-light-dark{
+    padding: 10px 0;
+    background-color: #f6f8fa;
+}
+.section-light-dark h5{
+    margin: 0;
+    line-height: 40px;
+}
+
+
 .section-dark{
     padding: 10px 0;
     background-color: #394F6A;
