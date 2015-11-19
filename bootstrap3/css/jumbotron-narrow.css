@@ -2,7 +2,18 @@
 body {
 /*  padding-top: 20px;
   padding-bottom: 20px;*/
-  background-color: #394F6A;
+  /*background-color: #394F6A;*/
+  background-image: url('../../assets/img/soy_filtered.jpg');
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -38,6 +49,7 @@ body {
     max-width: 730px;
     margin: auto;
     background-color: #f6f8fa;
+    min-height: 100vh;
   }
 }
 
@@ -50,6 +62,9 @@ body {
   margin: 30px 0;
 }
 
+.a {
+  color: black;
+}
 .navbar-dark {
   color: black;
 }
