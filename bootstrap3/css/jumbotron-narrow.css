@@ -2,7 +2,7 @@
 body {
 /*  padding-top: 20px;
   padding-bottom: 20px;*/
-  background-color: #f6f8fa;
+  background-color: #394F6A;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -37,7 +37,7 @@ body {
   .container-block {
     max-width: 730px;
     margin: auto;
-    background-color: #394F6A;
+    background-color: #f6f8fa;
   }
 }
 
@@ -48,6 +48,10 @@ body {
 
 .container-narrow > hr {
   margin: 30px 0;
+}
+
+.navbar-dark {
+  color: black;
 }
 
 /* Main marketing message and sign up button */
@@ -66,6 +70,11 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.content {
+  margin: 20px;
+  margin-bottom: 20;
 }
 
 /* Responsive: Portrait tablets and up */
