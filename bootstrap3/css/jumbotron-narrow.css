@@ -44,7 +44,7 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .container-block {
     max-width: 850px;
     margin: auto;
