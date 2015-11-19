@@ -44,9 +44,9 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .container-block {
-    max-width: 730px;
+    max-width: 850px;
     margin: auto;
     background-color: #f6f8fa;
     min-height: 100vh;
