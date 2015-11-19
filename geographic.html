@@ -28,7 +28,9 @@
     <link href="bootstrap3/css/jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Adding map styles -->
+<!--     <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/> -->
     <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/>
+    <link rel="stylesheet" media="all" href="assets/css/jquery-ui-1.8.21.custom.css"/>
     <!-- <link rel="stylesheet" media="all" href="css/jquery-ui-1.8.21.custom.css"/> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -143,10 +145,6 @@
 </div>
   </body>
   <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
-  <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
-  <script src="assets/js/datamaps.usa.min.js"></script>
 
   <script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
   <script src="assets/js/gsdk-checkbox.js"></script>
@@ -155,6 +153,7 @@
   <script src="assets/js/get-shit-done.js"></script>
   <script src="assets/js/jquery-jvectormap-2.0.3.min.js"></script>
   <script src="assets/js/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 
   
     <script src="assets/js/custom.js"></script>
@@ -225,17 +224,17 @@
               max: jvm.max(statesValues)
             }]
           },
-          onMarkerLabelShow: function(event, label, index){
+          onMarkerTipShow: function(event, label, index){
             label.html(
               '<b>'+data.metro.names[index]+'</b><br/>'+
               '<b>Population: </b>'+data.metro.population[val][index]+'</br>'+
-              '<b>Unemployment rate: </b>'+data.metro.unemployment[val][index]+'%'
+              '<b>Something: </b>'+data.metro.unemployment[val][index]+'%'
             );
           },
-          onRegionLabelShow: function(event, label, code){
+          onRegionTipShow: function(event, label, code){
             label.html(
               '<b>'+label.html()+'</b></br>'+
-              '<b>Unemployment rate: </b>'+data.states[val][code]+'%'
+              '<b>Something: </b>'+data.states[val][code]+'%'
             );
           }
         });
