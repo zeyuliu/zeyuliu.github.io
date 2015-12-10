@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Temp Title</title>
+    <title>Labor</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap3/css/bootstrap.css" rel="stylesheet">
@@ -27,6 +27,12 @@
         <!-- Custom styles for this template -->
     <link href="bootstrap3/css/jumbotron-narrow.css" rel="stylesheet">
 
+    <!-- Adding map styles -->
+<!--     <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/> -->
+    <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/>
+    <link rel="stylesheet" media="all" href="assets/css/jquery-ui-1.8.21.custom.css"/>
+    <!-- <link rel="stylesheet" media="all" href="css/jquery-ui-1.8.21.custom.css"/> -->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,7 +45,7 @@
     <div id="navbar-full">
       <div id="navbar">
         <div class="navigation-top">
-           <nav class="navbar navbar-default navbar-dark navbar-transparent" role="navigation-demo">
+           <nav class="navbar navbar-default navbar-dark navbar-transparent" role="navigation-demo" style="color: black">
               <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -49,25 +55,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-dark navbar-brand" href="#">ESPM 155</a>
+                  <a style="color: black" class="navbar-brand" href="index.html">Home</a>
                 </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navigation-example-2">
-                  <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                          </ul>
-                    </li>
-                  </ul>
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" style="color: black" data-toggle="dropdown">Dropdown <b style="border-top:4px solid black" class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="geographic.html">Geographic</a></li>
+                        <li><a href="labor.html">Labor</a></li>
+                        <li><a href="economic.html">Economic</a></li>
+                        <li><a href="environmental.html">Environmental</a></li>
+                      </ul>
+                </li>
+              </ul>
                   
                 </div><!-- /.navbar-collapse -->
 
@@ -77,26 +80,42 @@
       </div><!--  end navbar -->
 
     </div> <!-- end menu-dropdown -->
+
+    <div class="jumbotron">
+        <center><h2 class="featurette-heading">Labor Analysis <br><span class="text-muted">of Soybean Production</span></h2></center>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      </div>
     <div class="content">
         <div>
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Labor in Soybean Production</h3>
         </div>
-
+        <div class="panel-body">
+			Between the years of 1980-2011, soybean production increased 96% and yield increased 55%.<sup>1</sup> Soy is a useful crop, so part of this dramatic increase in production can be attributed to its increasing popularity among farmers. One 60 pound bushel of soy yields 48 pounds of protein-rich meal and 11 pounds of oil. 98% of U.S. soy becomes feed for pigs, chickens, and cows.<sup>1</sup> In total, soybeans account for 90% of oilseed production in the United States.<sup>2</sup>
+			<br><br>
+			While popularity of the crop is partially responsible for the rise in production, the huge increases in yield are a result of technological advancements and new practices in soybean cultivation. These methods include increased planting flexibility, narrow rowed seeding practices, increased 50-50 soy and corn rotations, and lowered production cost due to adoption of herbicide resistant varieties of soy.<sup>2</sup>
+			<br><br>
+			To plant soy, land is tilled by a tractor. Soy is planted in the months of May to June, and the crop is harvested September through October.<sup>2</sup> Studies at the University of Wisconsin show that a corn-soy rotation of crops results in higher yields than the respective monocultures.<sup>3</sup> To plant soy, land is tilled by a tractor. A planter deposits seeds 1.5 inches deep, in rows that average 30 inches apart. Sometimes, soybeans are “drilled” into the ground in 7-inch rows by a no-till planter. This technique makes use of the remains of the last crop to be planted in the field, which saves time, conserves moisture, and decreases soil erosion.<sup>4</sup> This method drastically increases yield per acre, but is ineffective against tough weeds.  
+			<br><br>
+			Adoption of herbicide resistant soy was rapid. By 1998, 38% of U.S. soy was modified to be herbicide resistant. The first variety was introduced in 1993, and in 1996, Round-Up Ready varieties hit the market. Prior to this, weed control was mechanical and cultural. Herbicides were applied prior to planting, and followed by mechanical cultivation.<sup>5</sup> Round-Up ready soybeans (produced by Monsanto) do not provide higher yields due to weed resistance, but because they are more adapted to narrow-row planting techniques described above.
+			</div>
+      </div>
+      <br/>
     </div>
 </div>
   </body>
   <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
-  <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
-  <script src="assets/js/datamaps.usa.min.js"></script>
 
   <script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
   <script src="assets/js/gsdk-checkbox.js"></script>
   <script src="assets/js/gsdk-radio.js"></script>
   <script src="assets/js/gsdk-bootstrapswitch.js"></script>
   <script src="assets/js/get-shit-done.js"></script>
+  <script src="assets/js/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="assets/js/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
   
     <script src="assets/js/custom.js"></script>
     <script type="text/javascript">
@@ -132,4 +151,5 @@
       
     
 </script>
+
 </html>

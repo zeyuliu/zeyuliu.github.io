@@ -85,13 +85,6 @@
 
 <div id="carousel">
     <div id="carousel-example-generic" class="carousel slide gsdk-transition">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-      </ol>
     
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
@@ -101,6 +94,9 @@
             <span class="fa fa-angle-left"></span>
           </a>
           <a id="carousel-item-r" class="right carousel-control" data-next="2">
+            <span class="fa fa-angle-right"></span>
+          </a>
+		  <a id="carousel-item-r" class="right carousel-control" data-next="1">
             <span class="fa fa-angle-right"></span>
           </a>
           <img class="carousel-full" src="assets/img/carousel_soy_1.jpg" alt="Awesome Image">
@@ -503,7 +499,6 @@ election.labels();
 
 <script type="text/javascript">
 $('#carousel-item-l').on('click', function() {
-  debugger
     $('#carousel').carousel(parseInt($(this).attr('data-prev')));
 });
 $('#carousel-item-r').on('click', function() {
