@@ -394,3 +394,15 @@
 .cd-scrolling-bg {
     min-height: 100%;
 }
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vert-text {
+    @include vertical-align();
+}

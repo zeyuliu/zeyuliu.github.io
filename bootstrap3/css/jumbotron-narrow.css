@@ -44,9 +44,9 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
   .container-block {
-    max-width: 850px;
+    max-width: 1500px;
     margin: auto;
     background-color: #f6f8fa;
     min-height: 100vh;
@@ -93,7 +93,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
