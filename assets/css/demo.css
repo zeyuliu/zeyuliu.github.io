@@ -67,6 +67,16 @@
     background-size: cover;
     position: relative;
 */}
+
+.navigation-top{
+    margin-top: 0px;
+    height: 20px;
+/*    background-image: url('../img/cover_4.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+*/}
+
 #notifications{
     background-color: #FFFFFF;
     display: block;
