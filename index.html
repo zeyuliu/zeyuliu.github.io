@@ -84,23 +84,12 @@
 </div>
 
 <div id="carousel">
-    <div id="carousel-example-generic" class="carousel slide gsdk-transition">
+    <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
     
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active carousel-full">
-          <!-- Controls -->
-          <a id="carousel-item-l" class="left carousel-control" data-prev="0">
-            <span class="fa fa-angle-left"></span>
-          </a>
-          <a id="carousel-item-r" class="right carousel-control" data-next="2">
-            <span class="fa fa-angle-right"></span>
-          </a>
-		  <a id="carousel-item-r" class="right carousel-control" data-next="1">
-            <span class="fa fa-angle-right"></span>
-          </a>
           <img class="carousel-full" src="assets/img/carousel_soy_1.jpg" alt="Awesome Image">
-
         <div class="carousel-content block-center">
           <p><h3>Facets of Soy Farming #1</h3></p>
         </div>
@@ -125,7 +114,13 @@
         </div>
         </div>
       </div>
-  
+            <!-- Controls -->
+          <a id="carousel-item-l" class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="fa fa-angle-left"></span>
+          </a>
+          <a id="carousel-item-r" class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="fa fa-angle-right"></span>
+          </a>
     </div>
 </div> <!-- end carousel -->
 
@@ -495,14 +490,5 @@ election.labels();
  //    });
       
     
-</script>
-
-<script type="text/javascript">
-$('#carousel-item-l').on('click', function() {
-    $('#carousel').carousel(parseInt($(this).attr('data-prev')));
-});
-$('#carousel-item-r').on('click', function() {
-    $('#carousel').carousel(parseInt($(this).attr('data-next')));
-});
 </script>
 </html>
