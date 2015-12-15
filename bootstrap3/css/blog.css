@@ -3,7 +3,6 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
 }
 
@@ -36,9 +35,25 @@ h6, .h6 {
  */
 
 .blog-masthead {
-  background-color: #428bca;
+  /*background-color: #dce0e0;*/
+  background-color: #626065;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.blog-masthead a {
+  color: #FFFFFF;
+}
+
+.blog-masthead a:hover {
+  color: #FFFFFF;
+}
+
+.blog-masthead a:active {
+  color: #FFFFFF;
+}
+.blog-masthead a:visited {
+  color: #FFFFFF;
 }
 
 /* Nav links */
@@ -53,6 +68,10 @@ h6, .h6 {
 .blog-nav-item:focus {
   color: #fff;
   text-decoration: none;
+}
+
+.navbar-brand {
+  padding: 25px;
 }
 
 /* Active state gets a caret at the bottom */
