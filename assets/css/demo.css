@@ -361,7 +361,9 @@
 
 .carousel-content {
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
+  width: 35vw;
+  height: 25vh;
   right: 0%;
   z-index: 20;
   color: white;
