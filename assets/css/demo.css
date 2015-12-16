@@ -486,6 +486,10 @@
 }
 
 .topic-analysis {
-    background: #272822;
+    background: #84816E;
     color: #fff;
+}
+
+.topic-synthesis {
+    background-color: #D3DCD2;
 }
