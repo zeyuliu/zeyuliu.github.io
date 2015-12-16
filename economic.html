@@ -304,16 +304,16 @@ Siegel, Jennifer. "Soy Commodity Trading." Personal interview. 2 Nov. 2015.<br/>
     <script src="assets/js/creative.js"></script>
 
     <script type="text/javascript">
-    d3.json('assets/media/fake_users1.json', function(data) {
+    d3.json('assets/media/soyprice.json', function(data) {
     data = MG.convert.date(data, 'date');
     MG.data_graphic({
         title: "Line Chart",
-        description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+        description: "Soy Commodity Pricing Data",
         data: data,
         width: 600,
         height: 200,
         right: 40,
-        target: document.getElementById('fake_users1'),
+        target: document.getElementById('soyprice'),
         x_accessor: 'date',
         y_accessor: 'value'
     });
