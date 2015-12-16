@@ -178,6 +178,15 @@
 <div class="space-100"></div>
 </div>
 
+ <div class="section-light-dark">
+    <div id="topic-container">
+      <div class="topic-item"></div>
+      <div class="topic-item"></div>
+      <div class="topic-item"></div>
+      <div class="topic-item"></div>
+    </div>
+</div>
+
 <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
@@ -252,6 +261,7 @@
 	<script src="assets/js/gsdk-radio.js"></script>
 	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
 	<script src="assets/js/get-shit-done.js"></script>
+  <script src="assets/js/freewall.js"></script>
 	
     <script src="assets/js/custom.js"></script>
 <script type="text/javascript">
@@ -515,5 +525,20 @@ election.labels();
     });
       
     
+</script>
+
+<script type="text/javascript">
+$(function() {
+  var wall = new freewall("#topic-container");
+  wall.reset({
+    selector: '.topic-item',
+    animate: true,
+    cellW: 300,
+    onResize: function() {
+      wall.refresh();
+    }
+  });
+  wall.fitWidth();
+});
 </script>
 </html>
