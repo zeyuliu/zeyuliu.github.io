@@ -465,3 +465,9 @@
 
 .grid-item--height2 { height: 200px; }
 .grid-item--height3 { height: 260px; }
+
+.next-button{
+	bottom: 5%;
+	right: 5%;
+	position: absolute;
+}

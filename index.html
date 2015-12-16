@@ -94,8 +94,8 @@
           <p><h3>Where Does Soy Go?</h3></p>
 		  <br/>
 		  <p>Soy has become one of the most widely grown commodity crops - but how is it consumed?</p>
-		  <br/><br/><br/>
-		  <p align="right">Find out more >></p>
+		  <div class="next-button"><button type="button" class="btn btn-success" href="#carousel-example-generic" data-slide="next">Find out more >></button>
+          </div>
         </div>
 
         </div>
@@ -105,9 +105,9 @@
           <p><h3>Soybeans</h3></p>
 		  <br/>
 		  <p>Soybeans can be processed and used whole, but are primarily crushed to separate the bean into oil and protein-rich meal.</p>
-		  <br/><br/><br/>
-		  <p align="right">Next: Whole Beans >></p>
-        </div>
+		  <div class="next-button"><button type="button" class="btn btn-success" href="#carousel-example-generic" data-slide="next">Next: Whole Beans >></button>
+          </div>
+		</div>
         </div>
         <div class="item carousel-full">
           <img class="carousel-full" src="assets/img/03.jpg" alt="Edamame, Tofu, Soymilk">
@@ -115,8 +115,9 @@
           <p><h3>Whole Beans</h3></p>
 		  <br/>
 		  <p>Whole soybeans are sometimes processed into full-fat soy flour. Whole beans or full-fat soy flour is used in products like soymilk, tofu, and soy sauce. Immature beans may also be cooked and eaten.</p>
-		  <br/>
-		  <p align="right">Next: Soybean Meal >></p>
+		  <br/><br/>
+		  <div class="next-button"><button type="button" class="btn btn-success" href="#carousel-example-generic" data-slide="next">Next: Soybean Meal >></button>
+          </div>
         </div>
         </div>
         <div class="item carousel-full">
@@ -125,7 +126,8 @@
           <p><h3>Soybean Meal</h3></p>
 		  <br/>
 		  <p>Soybean meal is rich in protein, and an excellent animal feed. About 85% of the global soybean crop is processed into soybean meal and oil, and the bulk of the resulting meal is fed to livestock. Soybean meal can also be further processed into defatted soy flour.</p>
-		  <p align="right">Next: Soybean Oil >></p>
+		  <div class="next-button"><button type="button" class="btn btn-success" href="#carousel-example-generic" data-slide="next">Next: Soybean Oil >></button>
+          </div>
         </div>
         </div>
         <div class="item carousel-full">
@@ -134,8 +136,9 @@
           <p><h3>Soybean Oil</h3></p>
 		  <br/>
 		  <p>Soybean oil is one of the top vegetable oils and ubiquitous in processed foods. It can also be processed into lecithin, a common emulsifier, among numerous other products.</p>
-		  <br/>
-		  <p align="right">Return to Start >></p>
+		  <br/><br/>
+		  <div class="next-button"><button type="button" class="btn btn-success" href="#carousel-example-generic" data-slide="next">Return to start >></button>
+          </div>
         </div>
         </div>
       </div>
@@ -153,27 +156,6 @@
 
 
 <!-- end main -->
- <div class="section-dark">
-    <div class="container">
-        <div class="row">
-            <div class="center-block">
-                <h5 class="text-center"> Map of US Soy Production
-                </h5>        
-            </div>
-        </div>
-    </div>
-</div>
- <div class="section-light-dark">
-    <div class="container">
-        <div class="row">
-<!--             <div class="col-md-8 col-md-offset-2">
-                <h5> US Map of Soy Production (random data).
-                </h5>        
-            </div> -->
-        </div>
-        <div class="center-block" id="usa-map-container" style="position: relative; width: 800px; height: 600px;"></div>
-    </div>
-</div>
 
 <div class="space-100"></div>
 </div>
@@ -271,7 +253,6 @@
 	<script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
-  <script src="assets/js/datamaps.usa.min.js"></script>
 
 	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
 	<script src="assets/js/gsdk-checkbox.js"></script>
@@ -283,234 +264,6 @@
 
 	
     <script src="assets/js/custom.js"></script>
-<script type="text/javascript">
-var colorScale = d3.scale.sqrt()
-        .domain([0, 600000])
-        .range(['#E8F5E9', '#4CAF50']).nice();
-var election = new Datamap({
-  scope: 'usa',
-  element: document.getElementById('usa-map-container'),
-  geographyConfig: {
-    highlightBorderColor: '#bada55',
-	highlightFillColor: '#bada55',
-   popupTemplate: function(geography, data) {
-      return '<div class="hoverinfo">' + geography.properties.name + ' Soybean Production (Thousands of Bushels): ' +  data.soyProduction + ' '
-    },
-    highlightBorderWidth: 3
-  },
-
-  fills: {
-  'None': '#eaeffb',
-  'Low': '#9BB5F8',
-  'Medium': '#3161D8',
-  'High': '#162B60',
-  defaultFill: '#FFFFFF'
-},
-data:{
-  "AL": {
-      "fillKey": "Low",
-      "soyProduction": 19000
-  },
-  "AK": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "AZ": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "AR": {
-      "fillKey": "Medium",
-      "soyProduction": 160500
-  },
-  "CA": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "CO": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "CT": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "DE": {
-      "fillKey": "Low",
-      "soyProduction": 8784
-  },
-  "FL": {
-      "fillKey": "Low",
-      "soyProduction": 1591
-  },
-  "GA": {
-      "fillKey": "Low",
-      "soyProduction": 11600
-  },
-  "HI": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "ID": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "IL": {
-      "fillKey": "High",
-      "soyProduction": 547680
-  },
-  "IN": {
-      "fillKey": "High",
-      "soyProduction": 307440
-  },
-  "IA": {
-      "fillKey": "High",
-      "soyProduction": 505730
-  },
-  "KS": {
-      "fillKey": "Medium",
-      "soyProduction": 142560
-  },
-  "KY": {
-      "fillKey": "Medium",
-      "soyProduction": 84000
-  },
-  "LA": {
-      "fillKey": "Medium",
-      "soyProduction": 80085
-  },
-  "MD": {
-      "fillKey": "Low",
-      "soyProduction": 23230
-  },
-  "ME": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "MA": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "MI": {
-      "fillKey": "Medium",
-      "soyProduction": 92020
-  },
-  "MN": {
-      "fillKey": "High",
-      "soyProduction": 305340
-  },
-  "MS": {
-      "fillKey": "Medium",
-      "soyProduction": 114400
-  },
-  "MO": {
-      "fillKey": "High",
-      "soyProduction": 260400
-  },
-  "MT": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "NE": {
-      "fillKey": "High",
-      "soyProduction": 288900
-  },
-  "NJ": {
-      "fillKey": "Low",
-      "soyProduction": 4532
-  },
-  "NV": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "NH": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "NY": {
-      "fillKey": "Low",
-      "soyProduction": 14715
-  },
-  "NC": {
-      "fillKey": "Medium",
-      "soyProduction": 69200
-  },
-  "ND": {
-      "fillKey": "High",
-      "soyProduction": 202515
-  },
-  "NM": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "OH": {
-      "fillKey": "High",
-      "soyProduction": 254100
-  },
-  "OK": {
-      "fillKey": "Low",
-      "soyProduction": 10295
-  },
-  "OR": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "PA": {
-      "fillKey": "Low",
-      "soyProduction": 29645
-  },
-  "RI": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "SC": {
-      "fillKey": "Low",
-      "soyProduction": 15400
-  },
-  "SD": {
-      "fillKey": "High",
-      "soyProduction": 229950
-  },
-  "TN": {
-      "fillKey": "Medium",
-      "soyProduction": 74060
-  },
-  "TX": {
-      "fillKey": "Low",
-      "soyProduction": 5390
-  },
-  "UT": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "VA": {
-      "fillKey": "Low",
-      "soyProduction": 25675
-  },
-  "VT": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "WV": {
-      "fillKey": "Low",
-      "soyProduction": 1326
-  },
-  "WA": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  },
-  "WI": {
-      "fillKey": "Medium",
-      "soyProduction": 78760
-  },
-  "WY": {
-      "fillKey": "None",
-      "soyProduction": "-"
-  }
-}
-});
-election.labels();
-</script>
 
 <script type="text/javascript">
          
