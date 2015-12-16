@@ -31,9 +31,7 @@ $(document).ready(function(){
             var thisdiv = $(this).attr("data-target");
 
             if(!$(this).hasClass('state-open')){
-                $(this).addClass('state-hover');
-                console.log("this is happening");
-                
+                $(this).addClass('state-hover');                
                 $(thisdiv).css({
                     'height':'30px'
                 });    
