@@ -178,13 +178,30 @@
 <div class="space-100"></div>
 </div>
 
- <div class="section-light-dark">
-    <div id="topic-container">
-      <div class="topic-item"></div>
-      <div class="topic-item"></div>
-      <div class="topic-item"></div>
-      <div class="topic-item"></div>
-    </div>
+<div class="grid">
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height3"></div>
+  <div class="grid-item grid-item--height2"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item grid-item--height2"></div>
 </div>
 
 <div class="container marketing">
@@ -262,6 +279,8 @@
 	<script src="assets/js/gsdk-bootstrapswitch.js"></script>
 	<script src="assets/js/get-shit-done.js"></script>
   <script src="assets/js/freewall.js"></script>
+  <script src="assets/js/masonry.pkgd.min.js"></script>
+
 	
     <script src="assets/js/custom.js"></script>
 <script type="text/javascript">
@@ -528,17 +547,28 @@ election.labels();
 </script>
 
 <script type="text/javascript">
-$(function() {
-  var wall = new freewall("#topic-container");
-  wall.reset({
-    selector: '.topic-item',
-    animate: true,
-    cellW: 300,
-    onResize: function() {
-      wall.refresh();
-    }
+// $(function() {
+//   var wall = new freewall("#topic-container");
+//   wall.reset({
+//     selector: '.topic-item',
+//     animate: true,
+//     cellW: 300,
+//     onResize: function() {
+//       wall.refresh();
+//     }
+//   });
+//   wall.fitWidth();
+// });
+$(document).ready( function() {
+
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 180,
+    isFitWidth: true,
+    gutter: 15
   });
-  wall.fitWidth();
+  
 });
+
 </script>
 </html>
