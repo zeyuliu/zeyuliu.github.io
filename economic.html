@@ -210,7 +210,7 @@ It is important to note that in the United States, there is different incentive 
         <div class="container">
             <div class="row vertical-align">
                 <div class="col-lg-6 col-md-6 text-left">
-					<img class="img-responsive" src="assets/img/econ_soybean_price.png" alt="Distribution of Soy Croppage in US">
+					<div class='col-lg-7 text-center' id='soyprice'></div>
 				</div>
 				<div class="col-lg-6 col-md-6 text-left">
 Hedging has played an important role in the rise of commodity crop production, as derivatives markets allow producers and buyers to hedge risk for future crop production. While the complexity of derivatives trading has its own barriers to entry, hedging has impacted farmers from not only a price perspective, but also a labor perspective. Diana Henrique explores how American farmers constantly need to spend excess amounts of time monitoring commodity trading prices to know how much they will be paid for future crops. 
@@ -245,13 +245,6 @@ If we question how markets are formed socially, it can better inform how we unde
 			</div>
         </div>
     </section>
-<section id="graph">
-    <div class="container">
-                    <div class='row trunk-section'>
-                <div class='col-lg-7 text-center' id='soyprice'></div>
-            </div>
-            </div>
-            </section>
 
 <section id="bib">
     <div class="container">
@@ -307,11 +300,11 @@ Siegel, Jennifer. "Soy Commodity Trading." Personal interview. 2 Nov. 2015.<br/>
     d3.json('assets/media/soyprice.json', function(data) {
     data = MG.convert.date(data, 'date', '%x');
     MG.data_graphic({
-        title: "Line Chart",
-        description: "Soy Commodity Pricing Data",
+        title: "Soybean Prices 2013-2015",
+        description: "Soy Pricing Data (CBOT)",
         data: data,
-        width: 600,
-        height: 200,
+        width: 500,
+        height: 300,
         right: 40,
         target: document.getElementById('soyprice'),
         x_accessor: 'date',
