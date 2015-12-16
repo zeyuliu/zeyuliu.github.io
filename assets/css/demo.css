@@ -53,6 +53,10 @@
     height: 130px;
     display: block;
 }
+.space-50{
+    height: 50px;
+    display: block;
+}
 .navigation-example .img-src{
     background-attachment: scroll; 
 }
@@ -63,7 +67,7 @@
 }
 */
 .main{
-    background-color: #FFFFFF;
+    background-color: #87989C;
 }
 .navigation-example{
     height: 100vh;
