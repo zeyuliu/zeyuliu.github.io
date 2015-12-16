@@ -21,6 +21,7 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/metricsgraphics.css" type="text/css">
     <link href="assets/css/get-shit-done.css" rel="stylesheet" />
     <link href="assets/css/demo.css" rel="stylesheet" /> 
 
@@ -244,6 +245,17 @@ If we question how markets are formed socially, it can better inform how we unde
 			</div>
         </div>
     </section>
+<section id="graph">
+    <div class="container">
+                    <div class='row trunk-section'>
+                <div class='col-lg-7 text-center' id='fake_users1'></div>
+                <div class='col-lg-5'>
+                    <div class='data-column'><a href='data/fake_users1.json'>data</a></div>
+
+                </div>
+            </div>
+            </div>
+            </section>
 
 <section id="bib">
     <div class="container">
@@ -279,9 +291,29 @@ If we question how markets are formed socially, it can better inform how we unde
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/jquery.fittext.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/d3.min.js"></script>
+    <script src="assets/js/metricsgraphics.min.js"></script>
+
 
     <!-- Custom Theme JavaScript -->
     <script src="assets/js/creative.js"></script>
+
+    <script type="text/javascript">
+    d3.json('assets/media/fake_users1.json', function(data) {
+    data = MG.convert.date(data, 'date');
+    MG.data_graphic({
+        title: "Line Chart",
+        description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+        data: data,
+        width: 600,
+        height: 200,
+        right: 40,
+        target: document.getElementById('fake_users1'),
+        x_accessor: 'date',
+        y_accessor: 'value'
+    });
+});
+    </script>
 
 </body>
 
