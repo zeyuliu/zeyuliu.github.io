@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Temp Title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap3/js/ie-emulation-modes-warning.js"></script>
+    <link href="assets/css/get-shit-done.css" rel="stylesheet" />  
+    <link href="assets/css/demo.css" rel="stylesheet" /> 
+
+    
+    <!--     Font Awesome     -->
+    <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+    <link href="bootstrap3/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="bootstrap3/css/blog.css" rel="stylesheet">
+
+
+    <!-- Adding map styles -->
+<!--     <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/> -->
+    <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/>
+    <link rel="stylesheet" media="all" href="assets/css/jquery-ui-1.8.21.custom.css"/>
+    <!-- <link rel="stylesheet" media="all" href="css/jquery-ui-1.8.21.custom.css"/> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+              <ul class="nav navbar-nav">
+                        <li><a href="geographic.html">Geographic</a></li>
+                        <li><a href="labor.html">Labor</a></li>
+                        <li><a href="economic.html">Economic</a></li>
+                        <li><a href="environmental.html">Environmental</a></li>
+              </ul>
+<!--               <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Register</a></li>
+                    
+                    <li><button href="#" class="btn btn-round btn-default">Sign in</button></li>
+               </ul> -->
+              
+            </div><!-- /.navbar-collapse -->
+<!--         <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">Home</a>
+          <a class="blog-nav-item" href="#">New features</a>
+          <a class="blog-nav-item" href="#">Press</a>
+          <a class="blog-nav-item" href="#">New hires</a>
+          <a class="blog-nav-item" href="#">About</a>
+        </nav> -->
+      </div>
+    </div>
+  <div class="container-block">
+
+    <div class="jumbotron">
+        <center><h2 class="featurette-heading">Geographic Analysis <br><span class="text-muted">of Soybean Production</span></h2></center>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      </div>
+    <div class="content">
+        <div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Soybean production in the U.S</h3>
+        </div>
+        <div class="panel-body">
+    <div class="container tim-container">
+        <div id="extras">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/soy_geo_crop.png" alt="Distribution of Soy Croppage in US">
+                </div>
+                <div class="col-md-6">
+                  <img class="img-responsive" src="assets/img/soy_geo_prod.png" alt="Distribution of Soy Croppage in US">    
+                </div>
+            </div>
+        </div>
+    <!--     end extras -->    
+    </div>
+<!-- end container -->
+<br/>
+<hr>
+                  Soybeans are highly monocroped in 15 states, including Iowa, Illinois, Indiana and Minnesota, since 2005. These 15 states in mid-east contribute to about 99% of the total national soybean production. Due to the optimal temperature and fertile soil, soybeans are massively produced in these areas. These midwestern states have deep, rich soils and relatively cool summer nights. North Carolina in comparison produces about one-tenth of the volume of soybeans produced in Iowa. Moreover, the soybean acreage has greatly increased from 1990 to 2005. USDA shows U.S. soybean plantings were at a record 83.701 million acres in 2014, 6.861 million more than planted in 2013 and 8.655 million more than planted in 2011
+Although the production of soybean and planting acerage has dramatically increased sine 1990s (State of Illinoi yielded 10% more soybean in 2014 than in 2013), there is no significant field site change within the U.S since 1990.
+        </div>
+      </div>
+
+      <div class="well well-lg">
+		   <div class="section-dark">
+		<div class="container">
+			<div class="row">
+				<div class="center-block">
+					<h5 class="text-center map-production"> Map of US Soy Production
+					</h5>        
+				</div>
+			</div>
+		</div>
+	</div>
+        <div class="map" style="width: 100%; height: 600px"></div>
+        <br/>
+          <!--         <div class="slider" style="width: 280px; margin: 10px"></div> -->
+          <div id="slider-default" class="slider slider-info ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Where are soybeans distributed and used in the U.S</h3>
+        </div>
+        <div class="panel-body">
+            <div class="container tim-container">
+        <div id="extras">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/soy_geo_meat.png" alt="Distribution of Soy Croppage in US">
+                </div>
+                <div class="col-md-6 vert-text">
+                  It is estimated that more than 108,354,000 metric tons of soybean will be produced in 2015 in the U.S. 85% of the total soybean consumed in U.S is used for soybean meals and only 2% of them goes to humans’ plate. As the chart indicates, U.A. meat consumption increases from 40 billion pounds in 1990 to 55 billion pounds in 2010 (about 40% increase), which means soybean, as their primary meal, has to drastically increase to feed enough livestock. On the other hand, the amount of soybean consumed by humans is relatively stable in the past 20 years. Therefore, soybean production has increased since 1990s due to the fact that the purpose of soybean shifts from feeding people to feed animals. 
+                </div>
+            </div>
+        </div>
+    <!--     end extras -->    
+    </div>
+<!-- end container -->
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Internationally geographic shift</h3>
+        </div>
+        <div class="panel-body">
+    <div class="container tim-container">
+        <div id="extras">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/soy_geo_global.png" alt="Distribution of Soy Croppage in US">
+                </div>
+                <div class="col-md-6">
+                  <img class="img-responsive" src="assets/img/soy_geo_china.png" alt="Distribution of Soy Croppage in US">    
+                </div>
+            </div>
+        </div>
+    <!--     end extras -->    
+    </div>
+<!-- end container -->
+<br/>
+<hr>
+While the production of soybeans in us is continuously increasing since 1990s, the percentage of US soybean production on a global scale is decreasing. Countries, such as Brazil and Argentina, start to take over the largest soybean producers. USDA show the data that more than 40 percent of the soybean is exported from the U.S and this number has increased from 40 percent in 2004 to 45 percent in 2015. China, as the biggest soybean importer of the U.S, plants relatively small amount of soybean domestically due to the soybean surplus in the U.S. In this case, soybean production shifts from domestic consumption to export due the urgent international soybean demand. 
+
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Distribution of Production</h3>
+        </div>
+        <div class="panel-body">
+U.S. soybean production continues on an upward trend from the late 1900s to the present with production in 1980 as 49 million metric tons and production in 2013 as 89 million metric tons. Likewise, record highs in the harvested area and average yield per acre of soy have been established. The focus will be on geographic analysis of growth in soybean production. Geography plays a significant role in the production because the locale of production presents the environmental conditions necessary for the soy to grow. To assess the geography of soybean production, the localization of production and the beneficiaries of this growth are examined in the context of the modern food system. 
+<br/><br/>Soybean production is localized in the Midwest region of the United States. The Midwest region is defined per U.S. Census Bureau as Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, Ohio, South Dakota, and Wisconsin. The top soybean producing states from 2013-2015  have been Illinois, Iowa, Indiana, Minnesota, Nebraska, Missouri, Ohio, South Dakota, North Dakota, and Arkansas respectively. The soybean production in the U.S. in 2013 in 1,000 bushels was 3,357,984 and in 2014 was 3,968,823. The top soybean production states in the Midwest accounted for 72.5% in 2014 and for 72.9% in 2013. This begs the question: why has soybean production been highly concentrated in the Midwest region of the United States?  
+<br/><br/>Two main aspects of the Midwest facilitate the concentration of soybean agriculture: namely soil and climate. The Midwest is characterized with one of the richest soils in the U.S. and a mild weather climate accompanying it. The mild weather is heavily influenced due to the proximity of the Great Lake Region to the Midwestern states, with many states in the Midwest bordering the Great Lakes. The Great Lakes region encompasses the U.S. states Illinois, Indiana, Michigan, Minnesota, New York, Ohio, Pennsylvania, and Wisconsin. As shown, six out of eight states in the Great Lake region are also in the Midwest region, and four out of the eight states are a part of the top soybean producing states. The Great Lakes function as heat sinks, which serve to moderate the temperature around the land encircling the Great Lakes by cooling the summer. The growing season for soy is generally late April to early May for planting soy and late September to the middle of November for harvesting soy. As such, the role of the Great Lakes as a heat sink complements the peak of the soy growing season, supplemented by the Great Lakes’ additional function as a humidifier continually increasing the moisture in the air. “Effects of Global Climate Change on Agriculture Great Lakes Region” by J.T. Ritchie, B.D. Baer, and T.Y. Chou utilizes two climate models Goddard Institute for Space Studies and Geophysical Fluid Dynamics Laboratory to assess yield and irrigation water demand under different weather scenarios focused on determining climate change effects on corn and soy production. The interpretation of the results indicate increases in temperature causes soy yield reduction because of decreased length of the growing season from shortened reproductive development period; with smaller temperature increases, the yield reduction would also decrease. Furthermore, the study reveals that climate change increases in temperature would shift the optimal harvested areas of soy production northward. Thus, the fertile soil of the Midwest region and the moderate temperature offer the conditions necessary for U.S. soy corporations to optimize their yield and continue to expand on that yield annually. 
+<br/><br/>With increased expansion in the harvested acre and yield per acre of soy, it is necessary to understand who the beneficiaries are of this increase in production. Contrary to public opinion, the Agricultural Census in 2012 revealed the U.S. soy farming industry consisted of dominantly individual or family owned farms, which were 83% of the soy producing farms while 7% of soy producing farms were owned by corporations. Prominent players such as Monsanto and DuPont who are normally associated as dominant presences in the modern food system play a small portion in the soy farming industry with a 2.4% estimated market share for Monsanto and 1.0% estimated market share for DuPont. These two corporations act as genetically modified primary soybean seed suppliers. The Supply Industries for U.S. Soy Farming who benefit are the Fertilizer Manufacturers, Biotechnology Corporations, Crop Services, Farm Product Storage and Warehousing, and Farm Equipment Wholesaling. The major players within each industry were Agrium Inc. and The Mosaic Company under Fertilizer Manufacturers, Archer Daniels Midland Company and Cargill Inc. under Farm Product Storage and Warehousing, and Gilead Sciences and Amgen Inc. under Biotechnology. With the price of soybeans at $9.3575 per bushel and increased growth in the soybean industry, these supply industries are the first in lines to profit for increased soybean farming. Besides the domestic demand of soy for soybean meal and soybean oil, the U.S. soy producing farms stand to gain with the U.S. as the second largest soybean exporter, contributing to 33% of the world’s soybean exports in 2014. The export market consists of China as 63% of the market share, Mexico as 7%, and Indonesia as 4%. Overall, the supply industries for soybean farming, family-owned farms, corporation-owned farms, are the beneficiaries of increased soy production in the U.S. for the past years. 
+
+        </div>
+      </div>
+      <br/>
+    </div>
+</div>
+  </body>
+  <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
+
+  <script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+  <script src="assets/js/gsdk-checkbox.js"></script>
+  <script src="assets/js/gsdk-radio.js"></script>
+  <script src="assets/js/gsdk-bootstrapswitch.js"></script>
+  <script src="assets/js/get-shit-done.js"></script>
+  <script src="assets/js/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="assets/js/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+
+  
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+         
+    $('.btn-tooltip').tooltip();
+    $('.label-tooltip').tooltip();
+    $('.pick-class-label').click(function(){
+        var new_class = $(this).attr('new-class');  
+        var old_class = $('#display-buttons').attr('data-class');
+        var display_div = $('#display-buttons');
+        if(display_div.length) {
+        var display_buttons = display_div.find('.btn');
+        display_buttons.removeClass(old_class);
+        display_buttons.addClass(new_class);
+        display_div.attr('data-class', new_class);
+        }
+    });
+    $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 75, 300 ],
+  });
+  $( "#slider-default" ).slider({
+      value: 70,
+      orientation: "horizontal",
+      range: "min",
+      animate: true
+  });
+  $('.carousel').carousel({
+      interval: 7000
+    });
+      
+    
+</script>
+
+  <script>
+    $(function(){
+      $.getJSON('assets/media/soy_by_state2.json', function(data){
+        var val = 2015;
+		$(".map-production").text("US Soy Production in " + val + " (bushels)");
+		
+            statesValues = jvm.values.apply({}, jvm.values(data.states))
+        $('.map').vectorMap({
+          map: 'us_aea_en',
+          series: {
+            regions: [{
+              scale: ['#DEEBF7', '#08519C'],
+              attribute: 'fill',
+              values: data.states[val],
+              min: jvm.min(statesValues),
+              max: jvm.max(statesValues),
+			  legend: { vertical: true }
+            }]
+          },
+          onRegionTipShow: function(event, label, code){
+            label.html(
+              '<b>'+label.html()+'</b></br>'+
+              '<b>Total Production (bushels): </b>'+data.states[val][code]
+            );
+          }
+        });
+
+        var mapObject = $('.map').vectorMap('get', 'mapObject');
+
+        $(".slider").slider({
+          value: val,
+          min: 1924,
+          max: 2015,
+          step: 1,
+          slide: function( event, ui ) {
+            val = ui.value;
+            mapObject.series.regions[0].setValues(data.states[ui.value]);
+			$(".map-production").text("US Soy Production in " + ui.value + " (bushels)");
+          }
+        });
+      });
+    })
+  </script>
+
+</html>
