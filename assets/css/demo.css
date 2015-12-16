@@ -57,6 +57,10 @@
     height: 50px;
     display: block;
 }
+.space-25{
+    height: 25px;
+    display: block;
+}
 .navigation-example .img-src{
     background-attachment: scroll; 
 }
