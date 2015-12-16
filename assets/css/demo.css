@@ -429,3 +429,9 @@
     height: 300px;
     background: #9DBFAF;
 }
+
+.next-button{
+	bottom: 5%;
+	right: 5%;
+	position: absolute;
+}
