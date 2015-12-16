@@ -31,7 +31,9 @@ $(document).ready(function(){
             var thisdiv = $(this).attr("data-target");
 
             if(!$(this).hasClass('state-open')){
-                $(this).addClass('state-hover');                
+                $(this).addClass('state-hover');
+                console.log("this is happening");
+                
                 $(thisdiv).css({
                     'height':'30px'
                 });    
@@ -55,7 +57,7 @@ $(document).ready(function(){
             event.preventDefault();
                         
             var thisdiv = $(this).attr("data-target");
-            var height = $(thisdiv).children('.panel-body').height();
+            var height = $(thisdiv).children('.panel-body').height() + 20;
             
             if($(this).hasClass('state-open')){
                 $(thisdiv).css({

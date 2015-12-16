@@ -20,6 +20,10 @@ hr {
     border-width: 3px;
 }
 
+hr.long{
+    max-width: 80%;
+}
+
 hr.light {
     border-color: #fff;
 }
