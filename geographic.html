@@ -21,6 +21,8 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css">
+    <link rel="stylesheet" media="all" href="assets/css/jquery-jvectormap-2.0.3.css"/>
+    <link rel="stylesheet" media="all" href="assets/css/jquery-ui-1.8.21.custom.css"/>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/creative.css" type="text/css">
@@ -93,7 +95,7 @@
         </div>
     </header>
 	
-	<section id="header">
+	<section id="us-prod">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -127,7 +129,7 @@
     </section>
 	
 
-    <section id="services">
+    <section id="prod-map">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -137,6 +139,7 @@
             </div>
         </div>
         <div class="container">
+                  <div id="slider-default" class="slider slider-info ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
             <div class="row">
                 <div class="col-lg-8 col-md-6 text-center">
                     <div class="service-box">
@@ -241,6 +244,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="assets/js/gsdk-checkbox.js"></script>
+    <script src="assets/js/gsdk-radio.js"></script>
+    <script src="assets/js/gsdk-bootstrapswitch.js"></script>
+    <script src="assets/js/get-shit-done.js"></script>
+    <script src="assets/js/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 
     <!-- Plugin JavaScript -->
     <script src="assets/js/jquery.easing.min.js"></script>
@@ -249,6 +259,88 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="assets/js/creative.js"></script>
+
+      <script src="jquery/jquery-1.10.2.js" type="text/javascript"></script>
+
+  
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+         
+    $('.btn-tooltip').tooltip();
+    $('.label-tooltip').tooltip();
+    $('.pick-class-label').click(function(){
+        var new_class = $(this).attr('new-class');  
+        var old_class = $('#display-buttons').attr('data-class');
+        var display_div = $('#display-buttons');
+        if(display_div.length) {
+        var display_buttons = display_div.find('.btn');
+        display_buttons.removeClass(old_class);
+        display_buttons.addClass(new_class);
+        display_div.attr('data-class', new_class);
+        }
+    });
+    $( "#slider-range" ).slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [ 75, 300 ],
+  });
+  $( "#slider-default" ).slider({
+      value: 70,
+      orientation: "horizontal",
+      range: "min",
+      animate: true
+  });
+  $('.carousel').carousel({
+      interval: 7000
+    });
+      
+    
+</script>
+
+  <script>
+    $(function(){
+      $.getJSON('assets/media/soy_by_state2.json', function(data){
+        var val = 2015;
+    $(".map-production").text("US Soy Production in " + val + " (bushels)");
+    
+            statesValues = jvm.values.apply({}, jvm.values(data.states))
+        $('.map').vectorMap({
+          map: 'us_aea_en',
+          series: {
+            regions: [{
+              scale: ['#DEEBF7', '#08519C'],
+              attribute: 'fill',
+              values: data.states[val],
+              min: jvm.min(statesValues),
+              max: jvm.max(statesValues),
+        legend: { vertical: true }
+            }]
+          },
+          onRegionTipShow: function(event, label, code){
+            label.html(
+              '<b>'+label.html()+'</b></br>'+
+              '<b>Total Production (bushels): </b>'+data.states[val][code]
+            );
+          }
+        });
+
+        var mapObject = $('.map').vectorMap('get', 'mapObject');
+
+        $(".slider").slider({
+          value: val,
+          min: 1924,
+          max: 2015,
+          step: 1,
+          slide: function( event, ui ) {
+            val = ui.value;
+            mapObject.series.regions[0].setValues(data.states[ui.value]);
+      $(".map-production").text("US Soy Production in " + ui.value + " (bushels)");
+          }
+        });
+      });
+    })
+  </script>
 
 </body>
 
